@@ -4,7 +4,7 @@ body {
     font-size:1rem;
     font-style:normal;
     font-weight: normal;
-    background-color: rgb(197, 222, 255); /* Can use name or code */
+    background-color: rgb(213, 231, 254); /* Can use name or code */
 }
 
 *{
@@ -19,22 +19,29 @@ p{
 }
 
 ul, ol{
-    background: #aacdff;
+    background: #aecefb;
     padding: 1rem;
 }
 
-.rounded{
+.ingrediants{
     margin-top: 15px;
     border: 2px solid rgb(4, 0, 255);
     border-radius: 12px;
     padding: 1em;
+
+    float: left;
+    width: 500px
+    
 }
 
-.rounded2{
+.method{
     margin-top: 15px;
     border: 2px solid rgb(4, 0, 255);
     border-radius: 12px;
     padding: 1em;
+
+    float: right;
+    width: 1000px;
 }
 
 /* --- challenge ---
@@ -63,4 +70,9 @@ a:hover{
 
 a:visited{
     color: rgb(166, 120, 239);
+}
+
+.pageEnd{
+
+    width: 200px;
 }
