@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+body {
+    font-family:"Poppins", serif;
+    font-size:1rem;
+    font-style:normal;
+    font-weight: normal;
+    background-color: rgb(255, 255, 255); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* navigation bar */
+
+
+li{
+    display: flex;
+    float: right;
+    text-align: right;
+    background: #fee0e0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-right: 2px solid #d988a3;
+
+}
+
+li:first-child{
+    border-right: none;
+}
+li:last-child{
+    border-left: 2px solid #d988a3;
+}
+
+a {
+    display: block;
+    padding: 8px;
+}
+
+ul{
+  background-color: #fee0e0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+a{
+    
+    color: #d87093;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+a:visited{
+    color: rgb(166, 120, 239);
+}
+
+.pageEnd p{ 
+
+    white-space: nowrap;
+    font-size: 20px;
+    padding: 1rem;
+}
+
+.pageEnd h2{
+    margin-top: 5px;
+    font-size: 23px;
+    padding: 1rem;
+    text-decoration: underline;
+}
+
+.pageEnd {
+    margin-top: 50px;
+    background-color: #fee0e0;
+    width: auto
+}
+
+.container > .title{
+    
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 145px;
+    color: #000000;
+    text-decoration: underline;
+}
+
+.description p{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 1rem;
+
+}

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
+body {
+    font-family:"Poppins", serif;
+    font-size:1rem;
+    font-style:normal;
+    font-weight: normal;
+    background-color: rgb(255, 255, 255); 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/* navigation bar */
+
+
+li{
+    display: flex;
+    float: right;
+    text-align: right;
+    background: #fee0e0;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-right: 2px solid #d988a3;
+
+}
+
+li:first-child{
+    border-right: none;
+}
+li:last-child{
+    border-left: 2px solid #d988a3;
+}
+
+a {
+    display: block;
+    padding: 8px;
+}
+
+ul{
+  background-color: #fee0e0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* background image */
+
+.container{
+    flex: 1;
+    padding: 1rem;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/brickwall.jpeg');
+    background-repeat: no-repeat;
+    background-position: cover;
+    min-height: 600px;
+    z-index: 3;
+}
+
+
+.container > .title{
+    
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 145px;
+    color: #ffdee9;
+}
+
+.container > .title h1{
+
+    font-family: "Girassol", serif;
+    font-style: normal;
+    font-size: 6rem;
+    font-weight: normal;
+}
+
+/* button */
+
+.container > #button {
+    background-color: #d988a3; /* Green */
+    border-radius: 4px;
+    color: white;
+    padding: 2px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.container > #button a{
+
+    color: #ffffff;
+}
+.container > #button a:visited{
+
+    color: rgb(231, 216, 255);
+}
+
+/* text */
+
+.mainTextHome p{
+    font-size: 20px;
+    padding: 1rem;
+}
+.mainTextHome h2{
+    margin-top: 5px;
+    font-size: 23px;
+    padding: 1rem;
+    text-decoration: underline;
+}
+
+.mainTextHome > .pageEnd p{ 
+
+    white-space: nowrap;
+}
+
+.mainTextHome > .pageEnd {
+    background-color: #fee0e0;
+    width: auto
+}
+
+
+/*
+.mainTextHome > .quietArea{
+
+    margin-top: 10px;
+    border: 3px solid  rgb(240, 181, 202);
+    border-radius: 15px;
+    padding: 1rem;
+    row-gap: 5px;
+    
+}
+
+.mainTextHome > .whichDrink{
+
+    margin-top: 10px;
+    border: 3px solid rgb(240, 181, 202);
+    border-radius: 15px;
+    padding: 1rem;
+    row-gap: 5px;
+
+}
+*/
+
+
+
+a{
+    
+    color: #d87093;
+}
+
+a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+a:visited{
+    color: rgb(166, 120, 239);
+}
+
+
+.bestSellersGrid{
+    display: grid;
+
+    grid-template-columns: repeat (3, 1fr);
+    max-width: 1000px;
+    min-height: 300px;
+    margin-inline: auto;
+    margin-top: 40px;
+    justify-content:space-evenly; /* horitzontal box arrangement - options: space-between,
+    space-around, flex-start, flex-end*/
+
+    row-gap: 20px;
+}
+
+.bestSellersGrid > .boxA{
+    justify-items: center;
+    grid-row: 1;
+    grid-column: 1;
+}
+.bestSellersGrid > .boxA p{
+    text-align: center;
+    font-size: 19px;
+}
+
+.bestSellersGrid > .boxB{
+    justify-items: center;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.bestSellersGrid > .boxB p{
+    text-align: center;
+    font-size: 19px;
+}
+
+.bestSellersGrid > .boxC{
+    justify-items: center;
+    grid-row: 1;
+    grid-column: 3;
+}
+
+.bestSellersGrid > .boxC p{
+    text-align: center;
+    font-size: 19px;
+}
